@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WinAPI0721", "WinAPI0721\WinAPI0721.vcxproj", "{5C7CC723-E2B5-41A3-A6A1-BED69E7E0DD1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{51BF2F5E-9BB8-40B1-81A0-6CF647821CDF}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\0721필기.txt = ..\..\..\Desktop\0721필기.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C7CC723-E2B5-41A3-A6A1-BED69E7E0DD1}.Debug|x64.ActiveCfg = Debug|x64
+		{5C7CC723-E2B5-41A3-A6A1-BED69E7E0DD1}.Debug|x64.Build.0 = Debug|x64
+		{5C7CC723-E2B5-41A3-A6A1-BED69E7E0DD1}.Debug|x86.ActiveCfg = Debug|Win32
+		{5C7CC723-E2B5-41A3-A6A1-BED69E7E0DD1}.Debug|x86.Build.0 = Debug|Win32
+		{5C7CC723-E2B5-41A3-A6A1-BED69E7E0DD1}.Release|x64.ActiveCfg = Release|x64
+		{5C7CC723-E2B5-41A3-A6A1-BED69E7E0DD1}.Release|x64.Build.0 = Release|x64
+		{5C7CC723-E2B5-41A3-A6A1-BED69E7E0DD1}.Release|x86.ActiveCfg = Release|Win32
+		{5C7CC723-E2B5-41A3-A6A1-BED69E7E0DD1}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D15014DC-2A09-463B-BBEF-F4447F41AA58}
+	EndGlobalSection
+EndGlobal

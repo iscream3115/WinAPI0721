@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="program.h" />
+    <ClInclude Include="utilities\Vector3.h" />
+    <ClInclude Include="utilities\singletonBase.h" />
+    <ClInclude Include="utilities\ResourceManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="program.cpp" />
+    <ClCompile Include="winMain.cpp" />
+    <ClCompile Include="utilities\ResourceManager.cpp" />
+  </ItemGroup>
+</Project>
