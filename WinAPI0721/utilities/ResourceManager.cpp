@@ -31,6 +31,7 @@ ResourceManger::~ResourceManger()
 
 }
 
+//브러쉬 초기화
 void ResourceManger::InitBrush()
 {
 	AddBrush("Red", RGB(255, 0, 0));

@@ -92,7 +92,7 @@
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
@@ -141,15 +141,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="program.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="systems\Keyboard.h" />
+    <ClInclude Include="systems\Timer.h" />
     <ClInclude Include="utilities\ResourceManager.h" />
     <ClInclude Include="utilities\singletonBase.h" />
     <ClInclude Include="utilities\Vector3.h" />
+    <ClInclude Include="systems\windows.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="program.cpp" />
+    <ClCompile Include="systems\Keyboard.cpp" />
+    <ClCompile Include="systems\Timer.cpp" />
     <ClCompile Include="utilities\ResourceManager.cpp" />
+    <ClCompile Include="systems\windows.cpp" />
     <ClCompile Include="winMain.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

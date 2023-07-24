@@ -22,3 +22,7 @@ extern HDC memDC;
 
 #include "utilities/Vector3.h"
 #include "utilities/singletonBase.h"
+#include "utilities/ResourceManager.h"
+#include "systems/windows.h"
+#include "systems/Keyboard.h"
+#include "systems/Timer.h"
