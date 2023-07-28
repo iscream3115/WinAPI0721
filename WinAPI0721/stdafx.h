@@ -3,7 +3,7 @@
 #include <iostream>
 #include <time.h>
 #include <stdlib.h>
-#include <string.h>
+#include <string>
 #include <vector>
 #include <unordered_map>
 #include <assert.h>
@@ -24,5 +24,4 @@ extern HDC memDC;
 #include "utilities/singletonBase.h"
 #include "utilities/ResourceManager.h"
 #include "systems/windows.h"
-#include "systems/Keyboard.h"
 #include "systems/Timer.h"

@@ -1,19 +1,53 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <ClInclude Include="utilities\Vector3.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="utilities\singletonBase.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="utilities\ResourceManager.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="systems\windows.h">
+      <Filter>systems</Filter>
+    </ClInclude>
+    <ClInclude Include="systems\Keyboard.h">
+      <Filter>systems</Filter>
+    </ClInclude>
+    <ClInclude Include="systems\Timer.h">
+      <Filter>systems</Filter>
+    </ClInclude>
     <ClInclude Include="stdafx.h" />
-    <ClInclude Include="utilities\Vector3.h" />
-    <ClInclude Include="utilities\singletonBase.h" />
-    <ClInclude Include="utilities\ResourceManager.h" />
-    <ClInclude Include="systems\windows.h" />
-    <ClInclude Include="systems\Keyboard.h" />
-    <ClInclude Include="systems\Timer.h" />
+    <ClInclude Include="systems\mouse.h">
+      <Filter>systems</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="winMain.cpp" />
-    <ClCompile Include="utilities\ResourceManager.cpp" />
-    <ClCompile Include="systems\windows.cpp" />
-    <ClCompile Include="systems\Keyboard.cpp" />
-    <ClCompile Include="systems\Timer.cpp" />
+    <ClCompile Include="utilities\ResourceManager.cpp">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="systems\windows.cpp">
+      <Filter>systems</Filter>
+    </ClCompile>
+    <ClCompile Include="systems\Keyboard.cpp">
+      <Filter>systems</Filter>
+    </ClCompile>
+    <ClCompile Include="systems\Timer.cpp">
+      <Filter>systems</Filter>
+    </ClCompile>
+    <ClCompile Include="systems\mouse.cpp">
+      <Filter>systems</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="systems">
+      <UniqueIdentifier>{238bc82b-5128-4583-8255-59624229e4ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utilities">
+      <UniqueIdentifier>{562f73ef-d330-4d8f-ac81-4f2d77cfd37c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>

@@ -24,17 +24,19 @@ private:
 
 private:
 	static bool isTimerStopped;
+
+	//현재 프레임에서 다음프레임으로 넘어가는 시간이다
 	static float timeElapsed;
 
-	int64 tickPerSec;
-	int64 currentTime;
-	int64 lastTime;
-	int64 lastFPSUpdate;
-	int64 fpsUpdateInterval;
+	int64 tickPerSec = 0;
+	int64 currentTime = 0;
+	int64 lastTime = 0;
+	int64 lastFPSUpdate = 0;
+	int64 fpsUpdateInterval = 0;
 
-	uint framecount;
-	float runningTime;
-	float fps;
+	uint framecount = 0;
+	float runningTime = 0;
+	float fps = 0;
 
 	RECT fpsRect;
 	wstring fpsStr;
