@@ -141,6 +141,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Program.h" />
+    <ClInclude Include="Geomatrics\Quad.h" />
     <ClInclude Include="systems\mouse.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="systems\Keyboard.h" />
@@ -151,6 +153,8 @@
     <ClInclude Include="systems\windows.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Program.cpp" />
+    <ClCompile Include="Geomatrics\Quad.cpp" />
     <ClCompile Include="systems\Keyboard.cpp" />
     <ClCompile Include="systems\Timer.cpp" />
     <ClCompile Include="utilities\ResourceManager.cpp" />

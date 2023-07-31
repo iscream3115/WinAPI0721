@@ -1,6 +1,4 @@
 #pragma once
-
-
 #define MAX_INPUT_MOUSE 8
 
 class Mouse : public singletonBase<Mouse>

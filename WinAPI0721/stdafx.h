@@ -25,3 +25,5 @@ extern HDC memDC;
 #include "utilities/ResourceManager.h"
 #include "systems/windows.h"
 #include "systems/Timer.h"
+#include "systems/Keyboard.h"
+#include "systems/mouse.h"

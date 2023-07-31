@@ -6,9 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WinAPI0721", "WinAPI0721\WinAPI0721.vcxproj", "{5C7CC723-E2B5-41A3-A6A1-BED69E7E0DD1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{51BF2F5E-9BB8-40B1-81A0-6CF647821CDF}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\Desktop\0721필기.txt = ..\..\..\Desktop\0721필기.txt
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

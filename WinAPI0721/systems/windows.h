@@ -32,6 +32,7 @@ private:
 		
 private:
 	static WinDesc desc;
+	static class Program* program;
 
 };
 

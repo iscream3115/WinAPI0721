@@ -1,7 +1,9 @@
 #include "stdafx.h"
 #include "windows.h"
+#include "Program.h"
 
 WinDesc Window::desc;
+Program* Window::program = nullptr;
 
 Window::Window(WinDesc wd)
 {
@@ -48,9 +50,12 @@ Window::Window(WinDesc wd)
 
 WPARAM Window::Run()
 {
-	
-
     MSG msg = { 0 };
+
+    keyboard::Create();
+    Mouse::Create();
+    Timer::Create();
+
 
     while (true)
     {
@@ -64,6 +69,13 @@ WPARAM Window::Run()
             }
         }
     }
+
+    SAFE_DELETE(program);
+
+    Timer::Delete();
+    Mouse::Create();
+    keyboard::Create();
+    
 
     return msg.wParam;
 
@@ -81,6 +93,8 @@ Window::~Window()
 HDC memDC;
 LRESULT Window::WinProc(HWND handle, UINT message, WPARAM wParam, LPARAM lParam)
 {
+    Mouse::Get()->InputProc(message, wParam, lParam);
+
     PAINTSTRUCT ps;
     HDC hdc;
     HBITMAP hBitMap, oldBitMap;
@@ -115,6 +129,8 @@ LRESULT Window::WinProc(HWND handle, UINT message, WPARAM wParam, LPARAM lParam)
                 //선택된 영역을 지우고 지정된 영역을 해당 색깔로 채움
                 PatBlt(memDC, 0, 0, crtRect.right, crtRect.bottom, WHITENESS);
 
+                Timer::Get()->Print();
+                Mouse::Get()->Print();
 
                 //지정된 비트맵에서 비트맵으로 영역 단순복사
                 BitBlt(hdc, 0, 0, crtRect.right, crtRect.bottom, memDC, 0, 0, SRCCOPY);
@@ -130,6 +146,15 @@ LRESULT Window::WinProc(HWND handle, UINT message, WPARAM wParam, LPARAM lParam)
         }
         case WM_TIMER:
         {
+            if (Timer::Get())
+                Timer::Get()->Update();
+            if (keyboard::Get())
+                keyboard::Get()->Update();
+            if (Mouse::Get())
+                Mouse::Get()->Update();
+            if (program)
+                program->Update();
+
             //지정된 영역을 무효화, 해당 영역을 다시 그림
             InvalidateRect(desc.handle, nullptr, false);
             break;

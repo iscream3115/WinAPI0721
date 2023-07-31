@@ -23,6 +23,8 @@
     <ClInclude Include="systems\mouse.h">
       <Filter>systems</Filter>
     </ClInclude>
+    <ClInclude Include="Geomatrics\Quad.h" />
+    <ClInclude Include="Program.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="winMain.cpp" />
@@ -41,6 +43,8 @@
     <ClCompile Include="systems\mouse.cpp">
       <Filter>systems</Filter>
     </ClCompile>
+    <ClCompile Include="Geomatrics\Quad.cpp" />
+    <ClCompile Include="Program.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="systems">
